@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="./" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="./" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,6 +34,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Datagrama.cpp" />
+		<Unit filename="Datagrama.h" />
+		<Unit filename="Fila.cpp" />
+		<Unit filename="Fila.h" />
+		<Unit filename="Rede.cpp" />
+		<Unit filename="Rede.h" />
+		<Unit filename="Roteador.cpp" />
+		<Unit filename="Roteador.h" />
+		<Unit filename="TabelaDeRepasse.cpp" />
+		<Unit filename="TabelaDeRepasse.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
