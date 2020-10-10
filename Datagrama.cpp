@@ -36,7 +36,7 @@ string Datagrama::getDado()
 
 void Datagrama::processar()
 {
-    this->ttl = ttl + 1;
+    this->ttl = ttl - 1;
 }
 
 bool Datagrama::ativo()
