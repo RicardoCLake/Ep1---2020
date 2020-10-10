@@ -1,6 +1,10 @@
 #ifndef DATAGRAMA_H
 #define DATAGRAMA_H
 
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 class Datagrama
 {
@@ -19,6 +23,8 @@ class Datagrama
     protected:
 
     private:
+        int origem, destino, ttl;
+        string dado;
 };
 
 #endif // DATAGRAMA_H
