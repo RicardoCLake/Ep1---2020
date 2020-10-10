@@ -1,41 +1,33 @@
 #include "TabelaDeRepasse.h"
 
-TabelaDeRepasse::TabelaDeRepasse()
-{
+TabelaDeRepasse::TabelaDeRepasse() {
 
 }
 
-bool TabelaDeRepasse::mapear(int endereco, Roteador* adjacente)
-{
+bool TabelaDeRepasse::mapear(int endereco, Roteador* adjacente) {
 
 }
 
-Roteador** TabelaDeRepasse::getAdjacentes()
-{
+Roteador** TabelaDeRepasse::getAdjacentes() {
 
 }
 
-int TabelaDeRepasse::getQuantidadeDeAdjacentes()
-{
+int TabelaDeRepasse::getQuantidadeDeAdjacentes() {
 
 }
 
-void TabelaDeRepasse::setPadrao(Roteador* padrao)
-{
+void TabelaDeRepasse::setPadrao(Roteador* padrao) {
 
 }
 
-Roteador* TabelaDeRepasse::getDestino(int endereco)
-{
+Roteador* TabelaDeRepasse::getDestino(int endereco) {
 
 }
 
-void TabelaDeRepasse::imprimir()
-{
+void TabelaDeRepasse::imprimir() {
 
 }
 
-TabelaDeRepasse::~TabelaDeRepasse()
-{
+TabelaDeRepasse::~TabelaDeRepasse() {
     //dtor
 }

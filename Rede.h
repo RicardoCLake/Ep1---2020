@@ -1,9 +1,9 @@
 #ifndef REDE_H
 #define REDE_H
 
+#include "Roteador.h"
 
-class Rede
-{
+class Rede {
     public:
         Rede(Roteador** roteadores, int quantidadeDeRoteadores);
         ~Rede();

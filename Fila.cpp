@@ -1,31 +1,29 @@
 #include "Fila.h"
 
-Fila::Fila(int tamanho)
-{
+Fila::Fila(int tamanho):
+tamanho(tamanho) {
+    this->cabeca = 0;
+    this->calda = 0;
+    this->n_elementos = 0;
+    vetor = new Roteador*[tamanho];
+}
+
+bool Fila::enqueue(Datagrama* d) {
 
 }
 
-bool Fila::enqueue(Datagrama* d)
-{
+Datagrama* Fila::dequeue() {
 
 }
 
-Datagrama* Fila::dequeue()
-{
+bool Fila::isEmpty() {
 
 }
 
-bool Fila::isEmpty()
-{
+void Fila::imprimir() {
 
 }
 
-void Fila::imprimir()
-{
-
-}
-
-Fila::~Fila()
-{
+Fila::~Fila() {
     //dtor
 }

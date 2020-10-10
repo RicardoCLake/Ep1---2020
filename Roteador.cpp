@@ -1,46 +1,37 @@
 #include "Roteador.h"
 
-Roteador::Roteador(int endereco)
-{
+Roteador::Roteador(int endereco) {
 
 }
 
-TabelaDeRepasse* Roteador::getTabela()
-{
+TabelaDeRepasse* Roteador::getTabela() {
 
 }
 
-Fila* Roteador::getFila()
-{
+Fila* Roteador::getFila() {
 
 }
 
-int Roteador::getEndereco()
-{
+int Roteador::getEndereco() {
 
 }
 
-void Roteador::receber(Datagrama* d)
-{
+void Roteador::receber(Datagrama* d) {
 
 }
 
-void Roteador::processar()
-{
+void Roteador::processar() {
 
 }
 
-string Roteador::getUltimoDadoRecebido()
-{
+string Roteador::getUltimoDadoRecebido() {
 
 }
 
-void Roteador::imprimir()
-{
+void Roteador::imprimir() {
 
 }
 
-Roteador::~Roteador()
-{
+Roteador::~Roteador() {
     //dtor
 }

@@ -1,10 +1,10 @@
 #ifndef TABELADEREPASSE_H
 #define TABELADEREPASSE_H
 
+#include "Roteador.h"
 #define MAXIMO_TABELA 5
 
-class TabelaDeRepasse
-{
+class TabelaDeRepasse {
     public:
         TabelaDeRepasse();
         ~TabelaDeRepasse();

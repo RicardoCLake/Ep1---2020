@@ -1,10 +1,10 @@
 #ifndef ROTEADOR_H
 #define ROTEADOR_H
 
+#include "TabelaDeRepasse.h"
 #define TAMANHO_FILA 3
 
-class Roteador
-{
+class Roteador {
     public:
 
         Roteador(int endereco);

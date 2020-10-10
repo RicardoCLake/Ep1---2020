@@ -1,9 +1,11 @@
 #ifndef FILA_H
 #define FILA_H
 
+#include "Datagrama.h"
+#include "Roteador.h"
 
-class Fila
-{
+
+class Fila {
     public:
         Fila(int tamanho);
         ~Fila();
@@ -15,6 +17,11 @@ class Fila
     protected:
 
     private:
+        int cabeca;
+        int calda;
+        int n_elementos;
+        int tamanho;
+        Roteador** vetor;
 };
 
 #endif // FILA_H

@@ -2,14 +2,10 @@
 #define DATAGRAMA_H
 
 #include <iostream>
-#include <string>
-
 using namespace std;
 
-class Datagrama
-{
+class Datagrama {
     public:
-
         Datagrama(int origem, int destino, int ttl, string dado);
         ~Datagrama();
         int getOrigem();
@@ -20,10 +16,10 @@ class Datagrama
         bool ativo();
         void imprimir();
 
-    protected:
-
     private:
-        int origem, destino, ttl;
+        int origem;
+        int destino;
+        int ttl;
         string dado;
 };
 

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1602345005 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Datagrama.cpp
+	"Datagrama.h"
+
+1602344386 /home/rifi/Documentos/pcs3111/Ep1---2020/Datagrama.h
+	<iostream>
+
+1602283121 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Fila.cpp
+	"Fila.h"
+
+1602344415 /home/rifi/Documentos/pcs3111/Ep1---2020/Fila.h
+	"Datagrama.h"
+
