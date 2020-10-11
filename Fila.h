@@ -2,7 +2,6 @@
 #define FILA_H
 
 #include "Datagrama.h"
-#include "Roteador.h"
 
 
 class Fila {
@@ -21,7 +20,7 @@ class Fila {
         int calda;
         int n_elementos;
         int tamanho;
-        Roteador** vetor;
+        Datagrama** vetor;
 };
 
 #endif // FILA_H

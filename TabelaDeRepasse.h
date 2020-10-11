@@ -4,6 +4,8 @@
 #include "Roteador.h"
 #define MAXIMO_TABELA 5
 
+class Roteador;
+
 class TabelaDeRepasse {
     public:
         TabelaDeRepasse();
@@ -14,7 +16,6 @@ class TabelaDeRepasse {
         void setPadrao(Roteador* padrao);
         Roteador* getDestino(int endereco);
         void imprimir();
-
 
     protected:
 
