@@ -32,9 +32,12 @@ bool Fila::isEmpty() {
 }
 
 void Fila::imprimir() {
-    cout << "Ha " << n_elementos << " na fila" << endl;
-    for (int i = 0; i < n_elementos; i++)
-        vetor[i]->imprimir();
+    cout << "Ha " << n_elementos << " datagramas na fila" << endl;
+    int j = cabeca;
+    for (int i = 0; i < n_elementos; i++) {
+        vetor[j]->imprimir();
+        j = (j + 1) % tamanho;
+        }
 }
 
 Fila::~Fila() {
