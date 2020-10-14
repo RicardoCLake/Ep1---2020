@@ -50,7 +50,7 @@ void Roteador::processar() {
 }
 
 string Roteador::getUltimoDadoRecebido() {
-
+    
 }
 
 void Roteador::imprimir() {
