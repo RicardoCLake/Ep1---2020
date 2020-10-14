@@ -15,6 +15,8 @@ class Rede {
     protected:
 
     private:
+        int quantidadeDeRoteadores;
+        Roteador** roteadores;
 };
 
 #endif // REDE_H

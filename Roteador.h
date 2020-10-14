@@ -9,6 +9,8 @@ using namespace std;
 
 #define TAMANHO_FILA 3
 
+class TabelaDeRepasse;
+
 class Roteador {
     public:
         Roteador(int endereco);
@@ -25,9 +27,9 @@ class Roteador {
 
     private:
         int endereco;
-        Datagrama* d;
-        TabelaDeRepasse* tab = new TabelaDeRepasse();
-        Fila* fila = new Fila(TAMANHO_FILA);
+        string ultimoDadoRecebido;
+        TabelaDeRepasse* tab;
+        Fila* fila;
 };
 
 #endif // ROTEADOR_H
