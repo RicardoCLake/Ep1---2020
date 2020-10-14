@@ -3,10 +3,11 @@
 
 #include "TabelaDeRepasse.h"
 #include "Fila.h"
+#include <iostream>
+
+using namespace std;
 
 #define TAMANHO_FILA 3
-
-class TabelaDeRepasse;
 
 class Roteador {
     public:
@@ -23,6 +24,10 @@ class Roteador {
     protected:
 
     private:
+        int endereco;
+        Datagrama* d;
+        TabelaDeRepasse* tab = new TabelaDeRepasse();
+        Fila* fila = new Fila(TAMANHO_FILA);
 };
 
 #endif // ROTEADOR_H
