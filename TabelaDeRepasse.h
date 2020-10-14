@@ -20,6 +20,10 @@ class TabelaDeRepasse {
     protected:
 
     private:
+        int n_enderecos;
+        Roteador* padrao;
+        int* enderecos;
+        Roteador** adjacentes;
 };
 
 #endif // TABELADEREPASSE_H
