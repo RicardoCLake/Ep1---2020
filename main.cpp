@@ -96,9 +96,10 @@ int main() {
 
             for(int i = 0; i < tempo; i++){
                 cout << endl;
-                cout << "Instante " << i << endl;
+                cout << "Instante " << i+1 << endl;
                 cout << "---" << endl;
                 rede->passarTempo();
+                cout << endl;
             }
 
             opcao = 0;
