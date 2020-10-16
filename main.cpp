@@ -65,11 +65,11 @@ int main() {
         if(opcao == 1){
             cout << "Endereco do roteador de origem: ";
             cin >> end_origem;
-            cout << "\nEndereco de destino: ";
+            cout << "Endereco de destino: ";
             cin >> end_destino;
-            cout << "\nTTL: ";
+            cout << "TTL: ";
             cin >> ttl;
-            cout << "\nMensagem: ";
+            cout << "Mensagem: ";
             cin >> mensagem;
             cout << endl;
 
