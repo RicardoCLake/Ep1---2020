@@ -1,8 +1,8 @@
 #include "TabelaDeRepasse.h"
 
 TabelaDeRepasse::TabelaDeRepasse() {
-    enderecos[MAXIMO_TABELA];
-    adjacentes[MAXIMO_TABELA];
+    this->enderecos[MAXIMO_TABELA];
+    this->adjacentes =  new Roteador*[MAXIMO_TABELA];
     this->n_enderecos = 0;
     this->padrao = NULL;
 }
@@ -52,4 +52,5 @@ void TabelaDeRepasse::imprimir() {
 }
 
 TabelaDeRepasse::~TabelaDeRepasse() {
+    delete[] adjacentes;
 }
