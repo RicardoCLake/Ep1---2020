@@ -22,9 +22,8 @@ int main() {
     int opcao = 0;
     int end_origem, end_destino, ttl;
     string mensagem;
-    Datagrama* d1 = new Datagrama(end_origem, end_destino, ttl, mensagem);
 
-    Roteador** roteadores = new Roteador*[6]; //Vetor de roteadores 
+    Roteador** roteadores = new Roteador*[6]; //Vetor de roteadores
     Roteador* r1 = (roteadores[0] = new Roteador(1));
     Roteador* r2 = (roteadores[1] = new Roteador(2));
     Roteador* r3 = (roteadores[2] = new Roteador(3));
@@ -32,8 +31,7 @@ int main() {
     Roteador* r5 = (roteadores[4] = new Roteador(5));
     Roteador* r6 = (roteadores[5] = new Roteador(6));
 
-    TabelaDeRepasse* tab = new TabelaDeRepasse();
-    
+
     Rede* rede = new Rede(roteadores, 6);
 
     r1->getTabela()->setPadrao(r2);
@@ -61,7 +59,7 @@ int main() {
             cin >> opcao;
             cout << endl;
         }
-        
+
         if(opcao == 1){
             cout << "Endereco do roteador de origem: ";
             cin >> end_origem;
@@ -97,9 +95,10 @@ int main() {
             cin >> tempo;
 
             for(int i = 0; i < tempo; i++){
+                cout << endl;
+                cout << "Instante " << i << endl;
+                cout << "---" << endl;
                 rede->passarTempo();
-
-                cout << "Roteador " << i << endl;
             }
 
             opcao = 0;

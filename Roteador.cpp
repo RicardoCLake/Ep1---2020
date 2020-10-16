@@ -24,29 +24,31 @@ void Roteador::receber(Datagrama* d) {
         cout << "\tFila em " << this->getEndereco() << " estourou" << endl;
 }
 
-void Roteador::processar() {   
+void Roteador::processar() {
     Datagrama* dat = this->fila->dequeue();
-    Roteador* rot = tab->getDestino(dat->getDestino());
+    Roteador* rot = tab->TabelaDeRepasse::getDestino(dat->Datagrama::getDestino());
 
     dat->processar();
 
+    cout << "Roteador " << this->endereco << endl;
+
     if (dat != NULL) {
         if (dat->getTtl() <= 0) {
-            cout << "\tDestruido por TTL: Origem: " << dat->getOrigem() 
-                << ", Destino" << dat->getDestino() << ", TTL: " << dat->getTtl()
+            cout << "\tDestruido por TTL: Origem: " << dat->getOrigem()
+                << ", Destino: " << dat->getDestino() << ", TTL: " << dat->getTtl()
                 << ", " << dat->getDado() << endl;
             delete dat;
         } else if (dat->getDestino() == this->endereco) {
             cout << "\tRecebido: " << dat->getDestino() << endl;
-            
+
             this->ultimoDadoRecebido = dat->getDado();
             delete dat;
         } else if (rot != NULL) {
-            cout << "\tEnviado para " << rot << ": " <<
-                "Origem: " << dat->getOrigem() 
-                << ", Destino" << dat->getDestino() << ", TTL: " << dat->getTtl()
+            cout << "\tEnviado para " << rot->getEndereco() << ": " <<
+                "Origem: " << dat->getOrigem()
+                << ", Destino: " << dat->getDestino() << ", TTL: " << dat->getTtl()
                 << ", " << dat->getDado() << endl;
-            
+
             rot->receber(dat);
         } else
             delete dat;
