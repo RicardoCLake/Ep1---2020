@@ -1,7 +1,7 @@
 #include "TabelaDeRepasse.h"
 
 TabelaDeRepasse::TabelaDeRepasse() {
-    this->enderecos[MAXIMO_TABELA];
+    this->enderecos = new int[MAXIMO_TABELA];
     this->adjacentes =  new Roteador*[MAXIMO_TABELA];
     this->n_enderecos = 0;
     this->padrao = NULL;
@@ -16,8 +16,8 @@ bool TabelaDeRepasse::mapear(int endereco, Roteador* adjacente) {
             return true;
         }
     }
-    enderecos[n_enderecos] == endereco;
-    adjacentes[n_enderecos] == adjacente;
+    enderecos[n_enderecos] = endereco;
+    adjacentes[n_enderecos] = adjacente;
     n_enderecos++;
     return true;
 }
@@ -53,4 +53,5 @@ void TabelaDeRepasse::imprimir() {
 
 TabelaDeRepasse::~TabelaDeRepasse() {
     delete[] adjacentes;
+    delete[] enderecos;
 }

@@ -2,8 +2,12 @@
 1602351330 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Datagrama.cpp
 	"Datagrama.h"
 
+1602428528 .h"
+
 1602351251 /home/rifi/Documentos/pcs3111/Ep1---2020/Datagrama.h
 	<iostream>
+
+1602428123 
 
 1602429492 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Fila.cpp
 	"Fila.h"
@@ -16,6 +20,8 @@
 
 1602351264 /home/rifi/Documentos/pcs3111/Ep1---2020/Rede.h
 	"Roteador.h"
+
+1602429029 h"
 
 1602428123 /home/rifi/Documentos/pcs3111/Ep1---2020/Roteador.h
 	"TabelaDeRepasse.h"
@@ -30,11 +36,45 @@
 1602351468 source:/home/rifi/Documentos/pcs3111/Ep1---2020/TabelaDeRepasse.cpp
 	"TabelaDeRepasse.h"
 
+1602351468 epasse.h"
+
 1602429029 source:/home/rifi/Documentos/pcs3111/Ep1---2020/main.cpp
 	<iostream>
 	"Datagrama.h"
 	"Fila.h"
 	"TabelaDeRepasse.h"
 	"Rede.h"
+	"Roteador.h"
+
+1602791562 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Datagrama.cpp
+	"Datagrama.h"
+
+1602791562 /home/rifi/Documentos/pcs3111/Ep1---2020/Datagrama.h
+	<iostream>
+
+1602812906 source:/home/rifi/Documentos/pcs3111/Ep1---2020/TabelaDeRepasse.cpp
+	"TabelaDeRepasse.h"
+
+1602791562 /home/rifi/Documentos/pcs3111/Ep1---2020/TabelaDeRepasse.h
+	"Roteador.h"
+
+1602700476 /home/rifi/Documentos/pcs3111/Ep1---2020/Roteador.h
+	"TabelaDeRepasse.h"
+	"Fila.h"
+	<iostream>
+
+1602791562 /home/rifi/Documentos/pcs3111/Ep1---2020/Fila.h
+	"Datagrama.h"
+
+1602812910 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Fila.cpp
+	"Fila.h"
+
+1602812910 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Rede.cpp
+	"Rede.h"
+
+1602637286 /home/rifi/Documentos/pcs3111/Ep1---2020/Rede.h
+	"Roteador.h"
+
+1602812910 source:/home/rifi/Documentos/pcs3111/Ep1---2020/Roteador.cpp
 	"Roteador.h"
 
