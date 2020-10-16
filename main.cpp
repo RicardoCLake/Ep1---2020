@@ -80,17 +80,14 @@ int main() {
                 if(end_origem == roteadores[i]->getEndereco()){
                     tem_end_origem = true;
                     endereco_roteador_origem = i;
-                    break;
                 }
             }
             if(tem_end_origem){
                 rede->enviar(mensagem, roteadores[endereco_roteador_origem], end_destino, ttl);
                 opcao = 0;
-                break;
             }else{
                 cout << "Erro: origem desconhecida" << endl;
                 opcao = 0;
-                break;
             }
 
         }else if(opcao == 2){
@@ -106,7 +103,6 @@ int main() {
             }
 
             opcao = 0;
-            break;
         }
     }
 
