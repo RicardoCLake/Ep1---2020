@@ -26,13 +26,14 @@ void Roteador::receber(Datagrama* d) {
 
 void Roteador::processar() {
     Datagrama* dat = this->fila->dequeue();
-    Roteador* rot = tab->TabelaDeRepasse::getDestino(dat->Datagrama::getDestino());
 
     dat->processar();
 
     cout << "Roteador " << this->endereco << endl;
 
     if (dat != NULL) {
+        Roteador* rot = tab->getDestino(dat->getDestino());
+
         if (dat->getTtl() <= 0) {
             cout << "\tDestruido por TTL: Origem: " << dat->getOrigem()
                 << ", Destino: " << dat->getDestino() << ", TTL: " << dat->getTtl()
