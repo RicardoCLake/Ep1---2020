@@ -22,7 +22,6 @@ void Rede::passarTempo() {
     for (int i = 0; i < quantidadeDeRoteadores; i++) {
         roteadores[i]->processar();
     }
-
 }
 
 void Rede::imprimir() {

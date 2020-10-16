@@ -18,15 +18,13 @@ void imprimir_inicio(){
 }
 
 int main() {
+    //************************************DECLARACOES INICIAIS**********************************
     int opcao = 0;
-
     int end_origem, end_destino, ttl;
     string mensagem;
+    Datagrama* d1 = new Datagrama();
 
-    Datagrama* d1 = new Datagrama()
-
-    Roteador** roteadores = new Roteador*[6];
-
+    Roteador** roteadores = new Roteador*[6]; //Vetor de roteadores 
     Roteador* r1 = (roteadores[0] = new Roteador(1));
     Roteador* r2 = (roteadores[1] = new Roteador(2));
     Roteador* r3 = (roteadores[2] = new Roteador(3));
@@ -35,10 +33,14 @@ int main() {
     Roteador* r6 = (roteadores[5] = new Roteador(6));
 
     TabelaDeRepasse* tab = new TabelaDeRepasse();
-
     Rede* rede = new Rede(roteadores, 6);
 
-    while(opcao != 3 || opcao == 0){
+    r1->
+
+    //************************************ INTERFACE COM O USUARIO E OPCOES**********************************
+
+
+    while(opcao != 3){
         if(opcao == 0){
             imprimir_inicio();
             cin >> opcao;
@@ -63,7 +65,6 @@ int main() {
                     break;
                 }
             }
-
             if(tem_end_origem){
                 rede->enviar(mensagem, end_origem, end_destino, ttl);
                 opcao = 0;
@@ -73,13 +74,21 @@ int main() {
                 opcao = 0;
                 break;
             }
+
         }else if(opcao == 2){
             int tempo;
 
             cout << "Quantidade de tempo: ";
             cin >> tempo;
 
+            for(int i = 0; i < tempo; i++){
+                rede->passarTempo();
 
+                cout << "Roteador " << i << endl;
+            }
+
+            opcao = 0;
+            break;
         }
     }
 

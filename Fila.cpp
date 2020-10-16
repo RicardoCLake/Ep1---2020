@@ -37,7 +37,7 @@ void Fila::imprimir() {
     for (int i = 0; i < n_elementos; i++) {
         vetor[j]->imprimir();
         j = (j + 1) % tamanho;
-        }
+    }
 }
 
 Fila::~Fila() {
