@@ -27,11 +27,10 @@ void Roteador::receber(Datagrama* d) {
 void Roteador::processar() {
     Datagrama* dat = this->fila->dequeue();
 
-    dat->processar();
-
     cout << "Roteador " << this->endereco << endl;
 
     if (dat != NULL) {
+        dat->processar();
         Roteador* rot = tab->getDestino(dat->getDestino());
 
         if (dat->getTtl() <= 0) {
